@@ -27,49 +27,78 @@
     <!-- Support and Timeline Buttons -->
     <div class="buttons">
       <button class="button">SUPPORT</button>
-      <button class="button">PROJECTS</button>
+      <button class="button" id="projectsBtn">PROJECTS</button>
     </div>
     <!-- Social Icons -->
     <div class="media-buttons">
-  <a href="https://t.me/AJELLY123" target="_blank" class="link">
-    <i class="bx bxl-telegram"></i>
-  </a>
-  <a href="https://x.com/AJELLY123" target="_blank" class="link">
-    <i class="bx bxl-twitter"></i>
-  </a>
-  <a href="https://github.com/AJELLY123" target="_blank" class="link">
-    <i class="bx bxl-github"></i>
-  </a>
-  <a href="mailto:malithayesh1@pm.me" target="_blank" class="link">
-    <i class="bx bx-envelope"></i>
-  </a>
-</div>
-    <!-- You can use this part if you need this section. Just remove the comment.
-    <div class="analytics">
-      <div class="data">
-        <i class="bx bx-bowl-hot"></i>
-        <span class="number">😋</span>
-      </div>
-      <div class="data">
-        <i class="bx bx-bed"></i>
-        <span class="number">😴</span>
-      </div>
-      <div class="data">
-        <i class="bx bxs-dog"></i>
-        <span class="number">🤾‍♂</span>
-      </div>
-      <div class="data">
-        <i class="bx bx-male-female"></i>
-        <span class="number">🚽</span>
-      </div>
-    </div> -->
+      <a href="https://t.me/AJELLY123" target="_blank" class="link">
+        <i class="bx bxl-telegram"></i>
+      </a>
+      <a href="https://x.com/AJELLY123" target="_blank" class="link">
+        <i class="bx bxl-twitter"></i>
+      </a>
+      <a href="https://github.com/AJELLY123" target="_blank" class="link">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a href="mailto:malithayesh1@pm.me" target="_blank" class="link">
+        <i class="bx bx-envelope"></i>
+      </a>
+    </div>
   </div>
+
+  <!-- =====  APPLE-STYLE MODAL  ===== -->
+<div id="projectsModal" class="modal">
+  <div class="sheet">
+    <button class="close" aria-label="Close">&times;</button>
+
+    <h2 class="sheet-title">PROJECTS</h2>
+
+    <div class="cards-grid">
+      <!-- Card 1 -->
+      <a href="https://ai.budjet.org" target="_blank" class="card">
+        <div class="card-img">
+          <img src="https://wallpapers.com/images/hd/anime-profile-picture-jioug7q8n43yhlwn.jpg" alt="BudJet.in">
+        </div>
+        <h3>FREE AI Image generator</h3>
+        <p>300% FREE online AI image generator; no sign-up, easy & best.</p>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="https://github.com/AJELLY123/free-exchange-rate-api" target="_blank" class="card">
+        <div class="card-img">
+          <img src="https://libertystreeteconomics.newyorkfed.org/wp-content/uploads/sites/2/2022/11/LSE_2022_international-pressures_goldberg_460-1.jpg" alt="Link Shortener">
+        </div>
+        <h3>FREE Exchange rate API</h3>
+        <p>FREE & OPEN: No sign-up, UNLIMITED, Real-time & accurate</p>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="https://budjet.org" target="_blank" class="card">
+        <div class="card-img">
+          <img src="https://www.goldavenue.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fyrlg7o79%2Fproduction%2F4dd955b8d5fde7cf17fd708f2a5b1960f92b62d4-6000x4000.jpg&w=3840&q=75" alt="Weather CLI">
+        </div>
+        <h3>FREE Income & Expense tracker</h3>
+        <p>It's FREE baby. Track your every penny!!!</p>
+      </a>
+
+    </div>
+  </div>
+</div>
+<!-- =====  END MODAL  ===== -->
+
+  <!-- ── MODAL JS ── -->
+  <script>
+    const modal    = document.getElementById('projectsModal');
+    const openBtn  = document.getElementById('projectsBtn');
+    const closeBtn = document.querySelector('.close');
+
+    openBtn.onclick = () => modal.style.display = 'block';
+    closeBtn.onclick = () => modal.style.display = 'none';
+
+    window.onclick = (e) => {
+      if (e.target === modal) modal.style.display = 'none';
+    };
+  </script>
 </body>
 
-
 </html>
-
-
-
-
-
